@@ -5205,3 +5205,15 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2019-03-04 22:46:55.230
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-03-04 22:55:41.078
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zhFoJooq
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-03-04 22:55:41.082
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.zhFoJooq
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-03-04 22:55:41.087
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-03-04 22:55:41.091
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zhFoJooq => OK
