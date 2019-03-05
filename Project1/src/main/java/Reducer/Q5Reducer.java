@@ -18,7 +18,7 @@ public class Q5Reducer  extends Reducer<Text, FloatWritable, Text, FloatWritable
 			size++;
 		}
 		float average = total/size;
-		if(average>=25) {
+		if(average>=50) {
 			arg2.write(arg0, new FloatWritable(average));
 		}
 		

@@ -11,7 +11,7 @@ public class Q2Mapper  extends Mapper<LongWritable, Text, Text, FloatWritable> {
 	@Override
 	public void map(LongWritable key, Text value, Mapper<LongWritable, Text, Text, FloatWritable>.Context context) throws IOException, InterruptedException {
 		String line = value.toString();
-		if(line.contains("United States") && line.contains("at least completed post-secondary, population 25+, female")){
+		if(line.contains("United States") && line.contains("Educational attainment, at least completed post-secondary, population 25+, female (%)")){
 			String[] tokens = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
 			String country= tokens[0].substring(1, (tokens[0].length()-1));
 			for(int i =0; i<tokens.length; i++) {

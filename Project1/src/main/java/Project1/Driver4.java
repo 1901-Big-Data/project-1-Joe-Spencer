@@ -22,14 +22,13 @@ public class Driver4
     	
     	job.setJarByClass(Driver4.class);
     	
-    	job.setJobName("Job1");
+    	job.setJobName("Job4");
     	
     	FileInputFormat.setInputPaths(job, new Path(args[0]));
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
 		job.setMapperClass(Q4Mapper.class);
 		job.setReducerClass(Q4Reducer.class);
-		job.setCombinerClass(Q4Reducer.class);
 		
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(FloatWritable.class);

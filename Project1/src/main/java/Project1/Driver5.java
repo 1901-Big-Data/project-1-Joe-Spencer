@@ -23,14 +23,13 @@ public class Driver5
     	
     	job.setJarByClass(Driver5.class);
     	
-    	job.setJobName("Job1");
+    	job.setJobName("Job5");
     	
     	FileInputFormat.setInputPaths(job, new Path(args[0]));
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
 		job.setMapperClass(Q5Mapper.class);
 		job.setReducerClass(Q5Reducer.class);
-		job.setCombinerClass(Q5Reducer.class);
 		
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(FloatWritable.class);

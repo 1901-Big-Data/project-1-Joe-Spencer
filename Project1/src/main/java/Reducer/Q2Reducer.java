@@ -23,7 +23,7 @@ public class Q2Reducer  extends Reducer<Text, FloatWritable, Text, FloatWritable
 				 totalIncreases= totalIncreases+  list.get(list.size()-1)-list.get(0);
 				num++;
 			}
-			float avgIncrease=totalIncreases/num;
+			float avgIncrease=Math.abs(totalIncreases/num);
 			arg2.write(arg0, new FloatWritable(avgIncrease));
 		}
 		
